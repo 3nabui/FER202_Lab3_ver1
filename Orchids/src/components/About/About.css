@@ -1,0 +1,61 @@
+.about-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.ab-row {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin: 0 -8px;
+}
+
+.ab-column {
+  flex: 1; 
+  max-width: 30%;
+  margin: 8px;
+  box-sizing: border-box; 
+}
+
+.about-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  color: black;
+}
+
+.about-container {
+  padding: 16px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .ab-column {
+    max-width: 100%;
+    flex: 100%; /* Makes columns stack on small screens */
+  }
+}
